@@ -1,9 +1,5 @@
 <?php
     require_once 'function.php';
-    if (empty($_SESSION['test'])) {
-        header("HTTP/1.1 403 Forbidden");
-        die;
-    }
     if(!empty($_FILES)){
         $_SESSION['test']=" ";
         header("Location: test.php");
